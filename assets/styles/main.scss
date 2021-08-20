@@ -33,7 +33,7 @@ ul {
 }
  
 section {
-    padding: 2em 2em;
+    padding: 4em 4em;
 }
 
 header {
@@ -107,7 +107,7 @@ header {
 .section-video {
     text-align: center;
     background: url("../images/pattern-randomized.svg");
-    height: 100vh;
+    // height: 100vh;
     .title-video {
         color: var(--headline-color);
         font-size: 2.4rem;
