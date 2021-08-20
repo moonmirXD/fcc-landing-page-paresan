@@ -53,7 +53,7 @@ header {
     .logo {
         font-size: 1.5em;
         span {
-            color: var(--highlight-color)
+            color: #b69d11c2
         }
     }
 
@@ -107,7 +107,7 @@ header {
 .section-video {
     text-align: center;
     background: url("../images/pattern-randomized.svg");
-    height: 90vh;
+    // height: 90vh;
     .title-video {
         color: var(--headline-color);
         font-size: 2.4rem;
@@ -135,7 +135,7 @@ header {
 .section-form {
     background-color: var(--secondary-color);
     text-align: center;
-    height: 80vh;
+    // height: 80vh;
     .title-form {
         color: var(--headline-color);
         font-size: 2.4rem;

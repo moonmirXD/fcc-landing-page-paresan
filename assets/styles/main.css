@@ -59,7 +59,7 @@ header .logo {
 }
 
 header .logo span {
-  color: var(--highlight-color);
+  color: #b69d11c2;
 }
 
 header a {
@@ -111,7 +111,6 @@ header a {
 .section-video {
   text-align: center;
   background: url("../images/pattern-randomized.svg");
-  height: 90vh;
 }
 
 .section-video .title-video {
@@ -139,7 +138,6 @@ header a {
 .section-form {
   background-color: var(--secondary-color);
   text-align: center;
-  height: 80vh;
 }
 
 .section-form .title-form {
