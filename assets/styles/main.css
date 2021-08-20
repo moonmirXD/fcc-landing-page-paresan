@@ -111,6 +111,7 @@ header a {
 .section-video {
   text-align: center;
   background: url("../images/pattern-randomized.svg");
+  height: 100vh;
 }
 
 .section-video .title-video {
@@ -138,6 +139,7 @@ header a {
 .section-form {
   background-color: var(--secondary-color);
   text-align: center;
+  height: 100vh;
 }
 
 .section-form .title-form {
