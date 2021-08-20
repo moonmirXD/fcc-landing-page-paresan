@@ -58,7 +58,7 @@ header .logo {
 }
 
 header .logo span {
-  color: var(--secondary-color);
+  color: var(--highlight-color);
 }
 
 header a {
@@ -176,8 +176,46 @@ header a {
           box-sizing: border-box;
 }
 
+.mobile-menu {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--button-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-close {
+  float: right;
+  margin: 5em;
+  cursor: pointer;
+  width: 50px;
+}
+
 @media only screen and (min-width: 768px) {
-  .mobile-menu {
+  .mobile-menu, .mobile-close {
     display: none;
   }
   header {
@@ -186,6 +224,14 @@ header a {
   }
   header .container {
     margin: 0 4em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 0px;
   }
   header .container nav {
     display: -webkit-box;
@@ -194,6 +240,10 @@ header a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
   }
   header .container nav ul {
     display: -webkit-box;
@@ -205,8 +255,8 @@ header a {
     margin-top: .3em;
   }
   header .container a:hover {
-    color: white;
-    border-bottom: 2px white solid;
+    border-bottom: 2px var(--highlight-color) solid;
+    font-weight: bold;
   }
 }
 

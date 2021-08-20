@@ -39,7 +39,7 @@ header {
     background-color: var(--button-color);
     font-weight: bold;
     padding: .9em;
-    // position: fixed;
+
     nav {
         display: none;
     }
@@ -52,7 +52,7 @@ header {
     .logo {
         font-size: 1.5em;
         span {
-            color: var(--secondary-color)
+            color: var(--highlight-color)
         }
     }
 
@@ -171,8 +171,50 @@ header {
     }
 }
 
+.mobile-menu {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: var(--button-color);
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        a {
+            // color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+            
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-close {
+    float:right;
+    margin: 5em;
+    cursor: pointer;
+    width: 50px;
+    // display: block;
+}
+
 @media only screen and (min-width: 768px) {
-    .mobile-menu {
+    .mobile-menu, .mobile-close {
         display: none;
     }
 
@@ -183,9 +225,18 @@ header {
 
     header .container {
         margin: 0 4em;  
+        display: grid;
+        grid-template-columns: 180px auto;
+        align-items: center;
+        height: 0px;
+        // justify-content: unset;
         nav {
             display: flex;
             justify-content: space-between;
+            background: none;
+            position: unset;
+            height: auto;
+            width: 100%;
             ul {
                 display: flex;
                 
@@ -197,8 +248,9 @@ header {
         }
 
         a:hover {
-            color: white;
-            border-bottom: 2px white solid;
+            // color: white;
+            border-bottom: 2px var(--highlight-color) solid;
+            font-weight: bold;
         }
  
     }
