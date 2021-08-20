@@ -17,6 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   background-color: var(--background-color);
+  cursor: url("../images/emojione-monotone_spoon.png") 2 2, auto;
 }
 
 a {
@@ -102,9 +103,15 @@ header a {
   cursor: pointer;
 }
 
+.hero .menu-btn:hover {
+  background-color: var(--headline-color);
+  color: var(--button-color);
+}
+
 .section-video {
   text-align: center;
   background: url("../images/pattern-randomized.svg");
+  height: 90vh;
 }
 
 .section-video .title-video {
@@ -132,6 +139,7 @@ header a {
 .section-form {
   background-color: var(--secondary-color);
   text-align: center;
+  height: 80vh;
 }
 
 .section-form .title-form {
@@ -174,6 +182,11 @@ header a {
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.section-form input[type="submit"]:hover {
+  background-color: var(--headline-color);
+  color: var(--button-color);
 }
 
 .mobile-menu {
