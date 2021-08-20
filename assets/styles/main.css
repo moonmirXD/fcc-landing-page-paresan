@@ -180,6 +180,10 @@ header a {
   .mobile-menu {
     display: none;
   }
+  header {
+    position: fixed;
+    width: 100%;
+  }
   header .container {
     margin: 0 4em;
   }
